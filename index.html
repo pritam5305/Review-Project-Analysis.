@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pritam5305.GitHub.io-review-project-analysis by pritam5305</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Pritam5305.GitHub.io-review-project-analysis</h1>
+      <h2 class="project-tagline">Help a leading mobile brand understand the voice of the customer by analyzing the reviews of their product on Amazon and the topics that customers are talking about. You will perform topic modeling on specific parts of speech. You’ll finally interpret the emerging topics</h2>
+      <a href="https://github.com/pritam5305/pritam5305.github.io-Review-Project-Analysis" class="btn">View on GitHub</a>
+      <a href="https://github.com/pritam5305/pritam5305.github.io-Review-Project-Analysis/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/pritam5305/pritam5305.github.io-Review-Project-Analysis/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="review-project-analysis" class="anchor" href="#review-project-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Review-Project-Analysis.</h1>
+<p>Help a leading mobile brand understand the voice of the customer by analyzing the reviews of their product on Amazon and the topics that customers are talking about. You will perform topic modeling on specific parts of speech. You’ll finally interpret the emerging topics</p>
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DESCRIPTION</h2>
+<p>Help a leading mobile brand understand the voice of the customer by analyzing the reviews of their product on Amazon and the topics that customers are talking about. You will perform topic modeling on specific parts of speech. You’ll finally interpret the emerging topics.</p>
+<h2>
+<a id="problem-statement" class="anchor" href="#problem-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problem Statement:</h2>
+<p>A popular mobile phone brand, Lenovo has launched their budget smartphone in the Indian market. The client wants to understand the VOC (voice of the customer) on the product. This will be useful to not just evaluate the current product, but to also get some direction for developing the product pipeline. The client is particularly interested in the different aspects that customers care about. Product reviews by customers on a leading e-commerce site should provide a good view.</p>
+<p>Domain: Amazon reviews for a leading phone brand</p>
+<p>Analysis to be done: POS tagging, topic modeling using LDA, and topic interpretation</p>
+<p>Content:</p>
+<p>Dataset: ‘K8 Reviews v0.2.csv’</p>
+<p>Columns:</p>
+<p>Sentiment: The sentiment against the review (4,5 star reviews are positive, 1,2 are negative)</p>
+<p>Reviews: The main text of the review</p>
+<h2>
+<a id="steps-to-perform" class="anchor" href="#steps-to-perform" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Steps to perform:</h2>
+<p>Discover the topics in the reviews and present it to business in a consumable format. Employ techniques in syntactic processing and topic modeling.</p>
+<p>Perform specific cleanup, POS tagging, and restricting to relevant POS tags, then, perform topic modeling using LDA. Finally, give business-friendly names to the topics and make a table for business.</p>
+<p>Tasks:</p>
+<h3>
+<a id="read-the-csv-file-using-pandas-take-a-look-at-the-top-few-records" class="anchor" href="#read-the-csv-file-using-pandas-take-a-look-at-the-top-few-records" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Read the .csv file using Pandas. Take a look at the top few records.</h3>
+<h3>
+<a id="normalize-casings-for-the-review-text-and-extract-the-text-into-a-list-for-easier-manipulation" class="anchor" href="#normalize-casings-for-the-review-text-and-extract-the-text-into-a-list-for-easier-manipulation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Normalize casings for the review text and extract the text into a list for easier manipulation.</h3>
+<h3>
+<a id="tokenize-the-reviews-using-nltks-word_tokenize-function" class="anchor" href="#tokenize-the-reviews-using-nltks-word_tokenize-function" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tokenize the reviews using NLTKs word_tokenize function.</h3>
+<h3>
+<a id="perform-parts-of-speech-tagging-on-each-sentence-using-the-nltk-pos-tagger" class="anchor" href="#perform-parts-of-speech-tagging-on-each-sentence-using-the-nltk-pos-tagger" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Perform parts-of-speech tagging on each sentence using the NLTK POS tagger.</h3>
+<h3>
+<a id="for-the-topic-model-we-should--want-to-include-only-nouns" class="anchor" href="#for-the-topic-model-we-should--want-to-include-only-nouns" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>For the topic model, we should  want to include only nouns.</h3>
+<h3>
+<a id="find-out-all-the-pos-tags-that-correspond-to-nouns" class="anchor" href="#find-out-all-the-pos-tags-that-correspond-to-nouns" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Find out all the POS tags that correspond to nouns.</h3>
+<h3>
+<a id="limit-the-data-to-only-terms-with-these-tags" class="anchor" href="#limit-the-data-to-only-terms-with-these-tags" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Limit the data to only terms with these tags.</h3>
+<h3>
+<a id="lemmatize" class="anchor" href="#lemmatize" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lemmatize.</h3>
+<h3>
+<a id="different-forms-of-the-terms-need-to-be-treated-as-one" class="anchor" href="#different-forms-of-the-terms-need-to-be-treated-as-one" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Different forms of the terms need to be treated as one.</h3>
+<h3>
+<a id="no-need-to-provide-pos-tag-to-lemmatizer-for-now" class="anchor" href="#no-need-to-provide-pos-tag-to-lemmatizer-for-now" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>No need to provide POS tag to lemmatizer for now.</h3>
+<h3>
+<a id="remove-stopwords-and-punctuation-if-there-are-any" class="anchor" href="#remove-stopwords-and-punctuation-if-there-are-any" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Remove stopwords and punctuation (if there are any).</h3>
+<h3>
+<a id="create-a-topic-model-using-lda-on-the-cleaned-up-data-with-12-topics" class="anchor" href="#create-a-topic-model-using-lda-on-the-cleaned-up-data-with-12-topics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a topic model using LDA on the cleaned-up data with 12 topics.</h3>
+<h3>
+<a id="print-out-the-top-terms-for-each-topic" class="anchor" href="#print-out-the-top-terms-for-each-topic" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Print out the top terms for each topic.</h3>
+<h3>
+<a id="what-is-the-coherence-of-the-model-with-the-c_v-metric" class="anchor" href="#what-is-the-coherence-of-the-model-with-the-c_v-metric" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is the coherence of the model with the c_v metric?</h3>
+<h3>
+<a id="analyze-the-topics-through-the-business-lens" class="anchor" href="#analyze-the-topics-through-the-business-lens" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Analyze the topics through the business lens.</h3>
+<h3>
+<a id="determine-which-of-the-topics-can-be-combined" class="anchor" href="#determine-which-of-the-topics-can-be-combined" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Determine which of the topics can be combined.</h3>
+<h3>
+<a id="create-topic-model-using-lda-with-what-you-think-is-the-optimal-number-of-topics" class="anchor" href="#create-topic-model-using-lda-with-what-you-think-is-the-optimal-number-of-topics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create topic model using LDA with what you think is the optimal number of topics</h3>
+<h3>
+<a id="what-is-the-coherence-of-the-model" class="anchor" href="#what-is-the-coherence-of-the-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is the coherence of the model?</h3>
+<h3>
+<a id="the-business-should--be-able-to-interpret-the-topics" class="anchor" href="#the-business-should--be-able-to-interpret-the-topics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The business should  be able to interpret the topics.</h3>
+<h3>
+<a id="name-each-of-the-identified-topics" class="anchor" href="#name-each-of-the-identified-topics" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Name each of the identified topics.</h3>
+<h3>
+<a id="create-a-table-with-the-topic-name-and-the-top-10-terms-in-each-to-present-to-the--business" class="anchor" href="#create-a-table-with-the-topic-name-and-the-top-10-terms-in-each-to-present-to-the--business" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create a table with the topic name and the top 10 terms in each to present to the  business.</h3>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/pritam5305/pritam5305.github.io-Review-Project-Analysis">Pritam5305.GitHub.io-review-project-analysis</a> is maintained by <a href="https://github.com/pritam5305">pritam5305</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
